@@ -1,10 +1,9 @@
 import cv2
 import numpy as np 
-from dataPath import DATA_PATH
 
 # Read images
-src = cv2.imread(DATA_PATH + "images/airplane.jpg")
-dst = cv2.imread(DATA_PATH + "images/sky.jpg")
+src = cv2.imread("data/airplane.jpg")
+dst = cv2.imread("data/sky.jpg")
 
 # Create a rough mask around the airplane.
 src_mask = np.zeros(src.shape, src.dtype)
